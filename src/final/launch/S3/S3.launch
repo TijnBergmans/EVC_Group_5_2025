@@ -1,0 +1,5 @@
+<launch>
+    <rosparam file="$(find final)/config/parameters.yaml"
+            command="load"/>
+    <include file="$(find final)/launch/S3/tracking.launch"/>
+</launch>

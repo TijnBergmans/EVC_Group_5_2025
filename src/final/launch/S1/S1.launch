@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find final)/launch/S1/camera_publisher.launch"/>
+    <include file="$(find final)/launch/S1/vision_detection.launch"/>
+</launch>

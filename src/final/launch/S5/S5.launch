@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find final)/launch/S5/search_path.launch"/>
+  <include file="$(find final)/launch/S5/state_manager.launch"/>
+  <include file="$(find final)/launch/S5/motor.launch"/>
+</launch>

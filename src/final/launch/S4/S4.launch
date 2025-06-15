@@ -1,0 +1,7 @@
+<launch>
+    <rosparam file="$(find final)/config/parameters.yaml"
+            command="load"/>
+    <include file="$(find final)/launch/S4/obstacle_sensing.launch"/>
+    <include file="$(find final)/launch/S4/obstacle_avoidance.launch"/>
+    <include file="$(find final)/launch/S4/obstacle_reader.launch"/>
+</launch>

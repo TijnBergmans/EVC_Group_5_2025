@@ -1,0 +1,8 @@
+<launch>
+  <node pkg="final"
+        type="state_manager_node.py"
+        name="state_manager_node"
+        output="screen">
+  </node>
+</launch>
+

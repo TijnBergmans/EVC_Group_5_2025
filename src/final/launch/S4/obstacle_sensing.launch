@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="final"
+        type="tof_sensor_node.py"
+        name="tof_sensor_node"
+        output="screen">
+  </node>
+</launch>

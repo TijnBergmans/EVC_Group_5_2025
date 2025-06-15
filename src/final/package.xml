@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>final</name>
+  <version>0.1.0</version>
+  <description>
+    Final project for Embedded visual control, tracking of a person while avoiding obstacles.
+  </description>
+
+  <maintainer email="j.j.p.leliveld@student.tue.nl">V. Rizeakos</maintainer>
+  <license>BSD</license>
+
+  <!-- build tool -->
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <!-- build‐time dependencies -->
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>sensor_msgs</build_depend>
+  <build_depend>geometry_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+
+  <!-- ensure downstream packages see the generated messages at build-time -->
+  <build_export_depend>message_runtime</build_export_depend>
+
+  <!-- run-time dependencies -->
+  <exec_depend>rospy</exec_depend>
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>sensor_msgs</exec_depend>
+  <exec_depend>geometry_msgs</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+  <!-- testing (optional) -->
+  <test_depend>rostest</test_depend>
+  <test_depend>roslaunch</test_depend>
+</package>

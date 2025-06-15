@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="final"
+        type="Reader_node.py"
+        name="Readernode"
+        output="screen">
+  </node>
+</launch>

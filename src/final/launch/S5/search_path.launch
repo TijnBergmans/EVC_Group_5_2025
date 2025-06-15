@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="final"
+        type="search_path_node.py"
+        name="search_path_node"
+        output="screen">
+  </node>
+</launch>

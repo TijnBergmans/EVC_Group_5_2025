@@ -1,0 +1,8 @@
+<launch>
+  <!-- Launch the simple listener that prints /target_position -->
+
+  <node pkg="final"
+        type="target_position_listener.py"
+        name="target_position_listener"
+        output="screen"/>
+</launch>

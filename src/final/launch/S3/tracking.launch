@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="final"
+        type="tracking.py"
+        name="person_tracking_node"
+        output="screen">
+  </node>
+</launch>

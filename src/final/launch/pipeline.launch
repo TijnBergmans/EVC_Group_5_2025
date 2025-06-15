@@ -1,0 +1,9 @@
+<launch>
+  <rosparam file="$(find final)/config/parameters.yaml"
+            command="load"/>
+  <include file="$(find final)/launch/S1/S1.launch"/>
+  <include file="$(find final)/launch/S2/S2.launch"/>
+  <include file="$(find final)/launch/S3/S3.launch"/>
+  <include file="$(find final)/launch/S4/S4.launch"/>
+  <include file="$(find final)/launch/S5/S5.launch"/>
+</launch>

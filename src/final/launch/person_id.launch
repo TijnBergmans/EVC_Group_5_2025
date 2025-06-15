@@ -1,0 +1,29 @@
+<launch>
+  <rosparam file="$(find final)/config/parameters.yaml"
+            command="load"/>
+  <include file="$(find final)/launch/S1/camera_publisher.launch"/>
+  <include file="$(find final)/launch/S2/S2.launch"/>
+
+  <node pkg="final"
+        type="person_cropper.py"
+        name="person_cropper"
+        output="screen">
+	</node>
+
+  <node pkg="ros_deep_learning"
+        type="detectnet"
+        name="detectnet"
+        output="screen">
+
+    <!-- Use NVIDIA PeopleNet / pednet (single‑class person model) -->
+    <param name="model_name" value="pednet"/>
+
+    <!-- Topic that your Python camera node now publishes (raw Image) -->
+    <param name="input"       value="/camera/image_undistorted"/>
+
+    <!-- Optional display options (turn off when benchmarking) -->
+    <param name="overlay"     value="box,conf"/>
+    <param name="threshold"   value="1.0"/>
+  </node>
+
+</launch>

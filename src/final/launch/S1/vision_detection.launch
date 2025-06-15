@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="final"
+        type="vision_detection_node.py"
+        name="vision_detection_node"
+        output="screen">
+  </node>
+</launch>

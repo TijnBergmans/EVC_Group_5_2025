@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="final"
+        type="motor_node.py"
+        name="motor_node"
+        output="screen">
+  </node>
+</launch>

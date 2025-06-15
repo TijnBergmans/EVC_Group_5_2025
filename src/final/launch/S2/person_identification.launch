@@ -1,0 +1,7 @@
+<launch>
+  <node pkg="final"
+        type="person_reid_node.py"
+        name="person_reid"
+        output="screen">
+  </node>
+</launch>
